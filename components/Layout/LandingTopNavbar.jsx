@@ -54,9 +54,9 @@ const LandingTopNavbar = () => {
         </Link>
         <div className="hidden lg:flex lg:space-x-16">
           <Link href={"/"}>
-            <MenuButton title="Home" icon={<HomeIcon />} />
+            <MenuButton title="Rent" icon={<HomeIcon />} />
           </Link>
-          <Link href={"/"}>
+          <Link href={"/services"}>
             <MenuButton title="Services" icon={<ServiceIcon />} />
           </Link>
           <Link href={"/"}>

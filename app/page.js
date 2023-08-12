@@ -1,11 +1,11 @@
-import FaqSection from "@/components/home/FaqSection";
-import FeaturePropertySection from "@/components/home/FeaturePropertySection";
-import HeroSection from "@/components/home/HeroSection";
-import PackageSection from "@/components/home/PackageSection";
-import PrtnarAreaSection from "@/components/home/PrtnarAreaSection";
-import ReviewSection from "@/components/home/ReviewSection";
-import SuperEasySections from "@/components/home/SuperEasySections";
-import WeBestSection from "@/components/home/WeBestSection";
+import FaqSection from "@/components/Home/FaqSection";
+import FeaturePropertySection from "@/components/Home/FeaturePropertySection";
+import HeroSection from "@/components/Home/HeroSection";
+import PackageSection from "@/components/Home/PackageSection";
+import PrtnarAreaSection from "@/components/Home/PrtnarAreaSection";
+import ReviewSection from "@/components/Home/ReviewSection";
+import SuperEasySections from "@/components/Home/SuperEasySections";
+import WeBestSection from "@/components/Home/WeBestSection";
 
 const Home = () => {
   return (
