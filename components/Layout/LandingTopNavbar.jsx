@@ -1,16 +1,30 @@
+"use client";
 import Image from "next/image";
 import Logo from "./@media/Logo.png";
 import MobileLogo from "./@media/mobile_logo.png";
 import Link from "next/link";
 import { HelpCenterIcon, HomeIcon, ServiceIcon } from "./@media/Icons";
 import MenuIcon from "@mui/icons-material/Menu";
+import { usePathname } from "next/navigation";
+import { Drawer } from "@mui/material";
+import { useState } from "react";
+import { SocialIcons } from "./LandingFooter";
+import { GrLinkPrevious } from "react-icons/gr";
 
-const MenuButton = ({ title, icon }) => {
+const MenuButton = ({ title, icon, url }) => {
+  const path = usePathname();
+
   return (
-    <button className="flex space-x-1">
-      {icon}
-      <span className="py-1">{title}</span>
-    </button>
+    <Link href={url}>
+      <button
+        className={`flex space-x-1  ${
+          path.includes(url) && "border-nm-green-100 border-b-2"
+        }`}
+      >
+        {icon}
+        <span className="py-1">{title}</span>
+      </button>
+    </Link>
   );
 };
 
@@ -34,6 +48,48 @@ export const AuthButton = () => {
   );
 };
 
+const MobileHamburger = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <>
+      <MenuIcon onClick={() => setOpen(!open)} />
+      <Drawer anchor={"right"} open={open} onClose={() => setOpen(!open)}>
+        <div className="w-64 min-h-screen">
+          <div className="sticky top-0 left-0">
+            <div className="flex justify-between items-center py-5 px-4">
+              <GrLinkPrevious
+                onClick={() => setOpen(!open)}
+                className="text-2xl"
+              />
+              <AuthButton />
+            </div>
+          </div>
+          <div className="px-4 py-5 flex flex-col space-y-8">
+            <MenuButton title="Rent" icon={<HomeIcon />} url="/rent" />
+            <MenuButton
+              title="Services"
+              icon={<ServiceIcon />}
+              url="/services"
+            />
+            <MenuButton
+              title="Help Center"
+              icon={<HelpCenterIcon />}
+              url="/contact"
+            />
+          </div>
+          <div className="bg-black px-4 py-16 sticky top-[100vh]">
+            <Image priority src={MobileLogo} alt="next-moov" />
+            <br />
+            <div className="flex">
+              <SocialIcons />
+            </div>
+          </div>
+        </div>
+      </Drawer>
+    </>
+  );
+};
+
 const LandingTopNavbar = () => {
   return (
     <nav className="sticky top-0 left-0 bg-white z-10">
@@ -53,21 +109,19 @@ const LandingTopNavbar = () => {
           />
         </Link>
         <div className="hidden lg:flex lg:space-x-16">
-          <Link href={"/"}>
-            <MenuButton title="Rent" icon={<HomeIcon />} />
-          </Link>
-          <Link href={"/services"}>
-            <MenuButton title="Services" icon={<ServiceIcon />} />
-          </Link>
-          <Link href={"/"}>
-            <MenuButton title="Help Center" icon={<HelpCenterIcon />} />
-          </Link>
+          <MenuButton title="Rent" icon={<HomeIcon />} url="/rent" />
+          <MenuButton title="Services" icon={<ServiceIcon />} url="/services" />
+          <MenuButton
+            title="Help Center"
+            icon={<HelpCenterIcon />}
+            url="/contact"
+          />
         </div>
         <div className="hidden lg:inline-block">
           <AuthButton />
         </div>
         <div className="bg-black p-2 text-white lg:hidden">
-          <MenuIcon />
+          <MobileHamburger />
         </div>
       </div>
       <hr />

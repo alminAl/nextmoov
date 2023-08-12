@@ -5,6 +5,26 @@ import { AiOutlineTwitter, AiFillLinkedin } from "react-icons/ai";
 import { FiInstagram } from "react-icons/fi";
 import Link from "next/link";
 
+export const SocialIcons = () => {
+  return (
+    <>
+      <div className="text-white text-3xl w-fit p-1 rounded-full">
+        <BiLogoFacebookCircle />
+      </div>
+      <div className="text-white text-3xl w-fit p-1 rounded-full">
+        <AiOutlineTwitter />
+      </div>
+      <div className="text-white text-3xl w-fit p-1 rounded-full">
+        <FiInstagram />
+      </div>
+      <div className="text-white text-3xl w-fit p-1 rounded-full">
+        <AiFillLinkedin />
+      </div>
+    </>
+  );
+};
+
+// defalult component
 const LandingFooter = () => {
   return (
     <footer className="sticky top-[100vh]">
@@ -13,18 +33,7 @@ const LandingFooter = () => {
           <div className="space-y-4">
             <Image src={Logo} alt="next-moov" />
             <div className="flex space-x-4">
-              <div className="text-white text-3xl w-fit p-1 rounded-full">
-                <BiLogoFacebookCircle />
-              </div>
-              <div className="text-white text-3xl w-fit p-1 rounded-full">
-                <AiOutlineTwitter />
-              </div>
-              <div className="text-white text-3xl w-fit p-1 rounded-full">
-                <FiInstagram />
-              </div>
-              <div className="text-white text-3xl w-fit p-1 rounded-full">
-                <AiFillLinkedin />
-              </div>
+              <SocialIcons />
             </div>
             <p className="text-white">
               © {new Date().getFullYear()}. All rights reserved to nextmoov PLC.
