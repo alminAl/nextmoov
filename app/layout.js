@@ -6,8 +6,8 @@ import LandingFooter from "@/components/Layout/LandingFooter";
 const manrope = Manrope({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Nextmoon",
-  description: "Nextmoon Official Site",
+  title: "Nextmoov",
+  description: "Nextmoov Official Site",
 };
 
 export default function RootLayout({ children }) {
