@@ -1,18 +1,36 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
+      colors: {
+        "nm-blue": {
+          100: "#41B6E6",
+          light: "#D2F2FF",
+        },
+        "nm-green": {
+          100: "#7AE1BF",
+          light: "#E4F9F2",
+        },
+        "nm-error": {
+          100: "#EA5252",
+          light: "#FBECEC",
+        },
+        "nm-gray": {
+          100: "#4B4B4B",
+        },
+      },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        "footer-texture": "url('/img/footer_banner.png')",
+        "super-easy": "url('/img/super_easy_pro.png')",
+        "package-building": "url('/img/package_building.png')",
+        "client-partnar": "url('/img/clent_bg.png')",
       },
     },
   },
   plugins: [],
-}
+};
