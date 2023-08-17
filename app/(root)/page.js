@@ -10,7 +10,7 @@ import WeBestSection from "./_components/Home/WeBestSection";
 const Home = () => {
   return (
     <>
-      <div className="bg-main-hero-bg bg-cover bg-no-repeat lg:h-[calc(90vh)]">
+      <div className="bg-main-hero-bg bg-cover bg-center bg-no-repeat lg:h-[calc(91vh)]">
         <div className="lg:pt-24">
           <HeroSection />
         </div>
