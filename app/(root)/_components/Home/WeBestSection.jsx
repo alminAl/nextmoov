@@ -1,6 +1,6 @@
 const CauseCart = ({ icon, title }) => {
   return (
-    <div className="py-12 px-6 shadow-md  cursor-pointer hover:bg-nm-green-100">
+    <div className="py-12 px-6 shadow  cursor-pointer hover:bg-nm-green-100">
       {icon}
       <p className="text-nm-gray-100">{title}</p>
     </div>
@@ -10,7 +10,7 @@ const CauseCart = ({ icon, title }) => {
 // default component
 const WeBestSection = () => {
   return (
-    <div className="px-6 py-12 space-y-6 lg:px-12">
+    <section className="px-6 py-20 space-y-6  lg:px-12">
       <div>
         <h1 className="text-4xl font-bold">Why we are the best</h1>
       </div>
@@ -152,7 +152,7 @@ const WeBestSection = () => {
           title="No credit card"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

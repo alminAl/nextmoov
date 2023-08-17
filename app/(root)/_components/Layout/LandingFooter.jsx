@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from "./@media/Logo.png";
+import Logo from "../@media/Logo.png";
 import { BiLogoFacebookCircle } from "react-icons/bi";
 import { AiOutlineTwitter, AiFillLinkedin } from "react-icons/ai";
 import { FiInstagram } from "react-icons/fi";

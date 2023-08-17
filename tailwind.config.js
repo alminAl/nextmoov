@@ -30,6 +30,7 @@ module.exports = {
         "package-building": "url('/img/package_building.png')",
         "client-partnar": "url('/img/clent_bg.png')",
         "service-hero": "url('/img/servicer_hero_banner.png')",
+        "main-hero-bg": "url('/img/hero_bg.png')",
       },
     },
   },

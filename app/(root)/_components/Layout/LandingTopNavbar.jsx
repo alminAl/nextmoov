@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import Logo from "./@media/Logo.png";
-import MobileLogo from "./@media/mobile_logo.png";
+import Logo from "../@media/Logo.png";
+import MobileLogo from "../@media/mobile_logo.png";
 import Link from "next/link";
-import { HelpCenterIcon, HomeIcon, ServiceIcon } from "./@media/Icons";
+import { HelpCenterIcon, HomeIcon, ServiceIcon } from "../@media/Icons";
 import MenuIcon from "@mui/icons-material/Menu";
 import { usePathname } from "next/navigation";
 import { Drawer } from "@mui/material";

@@ -25,7 +25,7 @@ const BasicPrice = ({ packageName, price, list = [], isMostSell }) => {
 
 const PackageSection = () => {
   return (
-    <div className="px-6 py-20 lg:py-32 lg:px-12">
+    <section className="px-6 py-20 lg:py-32  lg:px-12">
       <div className="grid gap-8 lg:grid-cols-3">
         <div>
           <h2 className="text-4xl font-bold text-white">
@@ -45,7 +45,7 @@ const PackageSection = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

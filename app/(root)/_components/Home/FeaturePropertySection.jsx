@@ -12,7 +12,7 @@ import { Navigation } from "swiper/modules";
 
 const Property = () => {
   return (
-    <div className="">
+    <section>
       <div className="relative">
         <Swiper
           navigation={{
@@ -59,7 +59,7 @@ const Property = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -17,7 +17,7 @@ const ReviewCard = ({ name, coment }) => {
 
 const ReviewSection = () => {
   return (
-    <div className="px-6 py-20 space-y-10 lg:py-32 lg:px-12">
+    <section className="px-6 py-20 space-y-10 lg:py-32 lg:px-12">
       <div className="text-center">
         <p className="text-sm">SATISFIED</p>
         <h2 className="text-4xl font-bold">Reviews from our landlords</h2>
@@ -31,7 +31,7 @@ const ReviewSection = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

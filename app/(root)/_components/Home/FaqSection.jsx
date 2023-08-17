@@ -8,7 +8,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const FaqSection = () => {
   return (
-    <div className="px-6 py-16 lg:px-12">
+    <section className="px-6 py-16 lg:px-12">
       <h1 className="text-4xl font-bold text-center">
         Frequently Asked Questions
       </h1>
@@ -42,7 +42,7 @@ const FaqSection = () => {
           </AccordionDetails>
         </Accordion>
       ))}
-    </div>
+    </section>
   );
 };
 

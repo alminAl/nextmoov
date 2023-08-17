@@ -1,5 +1,3 @@
-
-
 const InfoCard = ({ icon, title, description }) => {
   return (
     <div className="space-y-4">
@@ -13,7 +11,7 @@ const InfoCard = ({ icon, title, description }) => {
 // default component
 const SuperEasySections = () => {
   return (
-    <div className="px-6 py-20 space-y-6 lg:px-12">
+    <section className="px-6 py-24 space-y-6 lg:px-12">
       <div>
         <h1 className="text-4xl font-bold">Super Easy Property listing </h1>
       </div>
@@ -101,7 +99,7 @@ const SuperEasySections = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

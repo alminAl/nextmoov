@@ -5,13 +5,13 @@ import ZOO from "./@media/zoopia.png";
 
 const PrtnarAreaSection = () => {
   return (
-    <div className="px-6 py-16 lg:px-12">
+    <section className="px-6 py-16 lg:px-12">
       <div className="flex space-x-8">
         <Image src={RM} alt="right_move" />
         <Image src={PL} alt="prime_location" />
         <Image src={ZOO} alt="zoopia" />
       </div>
-    </div>
+    </section>
   );
 };
 
